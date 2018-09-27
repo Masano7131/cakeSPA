@@ -1,0 +1,23 @@
+.form-area {
+    width: 800px;
+    overflow-x: hidden;
+}
+
+.form-slide {
+    width: 4000px; /* 800 x 5 */
+    margin-left: 0;
+}
+
+.form-slide > form {
+    width: 800px;
+    float: left;
+    visibility: hidden;
+}
+
+.form-slide > form button[type=submit] {
+    text-transform: initial;
+}
+
+.form-slide > form:first-child {
+    visibility: visible;
+}
