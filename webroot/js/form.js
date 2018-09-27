@@ -1,7 +1,15 @@
 new Vue({
   el:'#tab',
   data:{
-    current:'tab1'
+    current:'tab1',
+    email:'',
+    password:'',
+    address:'',
+    email:'',
+    sex:'',
+    birth:'',
+    tel:'',
+    hobby:''
   },
   methods:{
     show:function(name){

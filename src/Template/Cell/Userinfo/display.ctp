@@ -8,8 +8,8 @@
     <?= $this->Form->create($user) ?>
     <fieldset>
         <legend><?= __('Add User') ?></legend>
-        <?= $this->Form->control('email',['placeholder'=>'email']);?>
-        <?= $this->Form->control('password',['placeholder'=>'password']);?>
+        <?= $this->Form->control('email',['placeholder'=>'email','v-model' => 'email']);?>
+        <?= $this->Form->control('password',['placeholder'=>'password', 'v-model' => 'password']);?>
     </fieldset>
     <?= $this->Form->button('NEXT',['type'=>'button','class'=>'button_right','@click'=>"show('tab2')"]) ?>
     <?= $this->Form->end() ?>

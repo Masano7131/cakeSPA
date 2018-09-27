@@ -9,11 +9,11 @@
     <fieldset>
         <legend><?= __('Add User') ?></legend>
         <?php
-            echo $this->Form->control('user_information.address');
-            echo $this->Form->control('user_information.Email');
-            echo $this->Form->control('user_information.sex');
-            echo $this->Form->control('user_information.birth');
-            echo $this->Form->control('user_information.tel');
+            echo $this->Form->control('user_information.address',['v-model'=>'address']);
+            echo $this->Form->control('user_information.Email',['v-model'=>'email']);
+            echo $this->Form->control('user_information.sex',['v-model'=>'sex']);
+            echo $this->Form->control('user_information.birth',['v-model'=>'birth']);
+            echo $this->Form->control('user_information.tel',['v-model'=>'tel']);
         ?>
     </fieldset>
     <?= $this->Form->button('PREVIOUS',['type'=>'button','@click'=>"show('tab1')"]) ?>

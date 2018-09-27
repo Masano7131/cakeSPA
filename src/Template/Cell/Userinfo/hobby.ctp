@@ -9,7 +9,7 @@
     <fieldset>
         <legend><?= __('Add User') ?></legend>
         <?php
-            echo $this->Form->control('user_hobby.text',['type'=>'textarea']);
+            echo $this->Form->control('user_hobby.text',['type'=>'textarea','v-model'=>'hobby']);
         ?>
     </fieldset>
     <?= $this->Form->button('PREVIOUS',['type'=>'button','class'=>'button_right','@click'=>"show('tab2')"]) ?>
